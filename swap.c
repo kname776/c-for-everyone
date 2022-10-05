@@ -1,18 +1,28 @@
-// C program to swap two variables
-#include <stdio.h>
-
-int main()
-{
-	int x, y;
-	printf("Enter Value of x ");
-	scanf("%d", &x);
-	printf("\nEnter Value of y ");
-	scanf("%d", &y);
-
-	int temp = x;
-	x = y;
-	y = temp;
-
-	printf("\nAfter Swapping: x = %d, y = %d", x, y);
-	return 0;
-}
+#include<stdio.h>  
+  
+void swap(int, int);  
+  
+int main()  
+{  
+    int a, b;  
+  
+    printf("Enter values for a and b\n");  
+    scanf("%d%d", &a, &b);  
+  
+    printf("\n\nBefore swapping: a = %d and b = %d\n", a, b);  
+  
+    swap(a, b);  
+  
+    return 0;  
+}  
+  
+void swap(int x, int y)  
+{  
+    int temp;  
+  
+    temp = x;  
+    x    = y;  
+    y    = temp;  
+  
+    printf("\nAfter swapping: a = %d and b = %d\n", x, y);  
+}  
