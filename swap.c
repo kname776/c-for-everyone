@@ -1,22 +1,28 @@
-#include<stdio.h>
-int main() {
-  double first, second, temp;
-  printf("Enter first number: ");
-  scanf("%lf", &first);
-  printf("Enter second number: ");
-  scanf("%lf", &second);
-
-  // value of first is assigned to temp
-  temp = first;
-
-  // value of second is assigned to first
-  first = second;
-
-  // value of temp (initial value of first) is assigned to second
-  second = temp;
-
-  // %.2lf displays number up to 2 decimal points
-  printf("\nAfter swapping, first number = %.2lf\n", first);
-  printf("After swapping, second number = %.2lf", second);
-  return 0;
-}
+#include<stdio.h>  
+  
+void swap(int, int);  
+  
+int main()  
+{  
+    int a, b;  
+  
+    printf("Enter values for a and b\n");  
+    scanf("%d%d", &a, &b);  
+  
+    printf("\n\nBefore swapping: a = %d and b = %d\n", a, b);  
+  
+    swap(a, b);  
+  
+    return 0;  
+}  
+  
+void swap(int x, int y)  
+{  
+    int temp;  
+  
+    temp = x;  
+    x    = y;  
+    y    = temp;  
+  
+    printf("\nAfter swapping: a = %d and b = %d\n", x, y);  
+}  

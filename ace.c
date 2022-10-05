@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main() {  
-    char c;
+    char character;
     printf("Enter a character: ");
-    scanf("%c", &c);  
+    scanf("%character", &character);  
     
     // %d displays the integer value of a character
     // %c displays the actual character
