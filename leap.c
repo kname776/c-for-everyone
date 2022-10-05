@@ -10,6 +10,7 @@ int main() {
    }
    // not a leap year if divisible by 100
    // but not divisible by 400
+   // else if (year % 100 == 0) {
    else if (year % 100 == 0) {
       printf("%d is not a leap year.", year);
    }
