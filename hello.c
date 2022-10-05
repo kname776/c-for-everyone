@@ -3,9 +3,8 @@ int main() {
    // printf() displays the string inside quotation
   int main()
 {
-  
-    // prints hello world
     printf("Hello World");
+     printf("1st");
   
     return 0;
 }
